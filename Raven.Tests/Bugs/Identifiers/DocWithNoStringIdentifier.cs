@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Raven.Client.Converters;
 using Raven.Tests.Helpers;
 using Xunit;
-using Xunit.Extensions;
 
-namespace Raven.Tests.Stress
+namespace Raven.Tests.Bugs.Identifiers
 {
     public class DocWithNoStringIdentifier : RavenTestBase
     {

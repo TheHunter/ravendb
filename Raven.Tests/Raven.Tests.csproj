@@ -225,6 +225,7 @@
     <Compile Include="Bugs\DyanmicId.cs" />
     <Compile Include="Bugs\DynamicId.cs" />
     <Compile Include="Bugs\EtagIssue.cs" />
+    <Compile Include="Bugs\Identifiers\DocWithNoStringIdentifier.cs" />
     <Compile Include="Bugs\LazilyLoadWithTransformerWhileUsingSharding.cs" />
     <Compile Include="Bugs\LoadDocumentWithSelectMany.cs" />
     <Compile Include="Bugs\PatchingWithDefault.cs" />
@@ -1302,7 +1303,6 @@
     <Compile Include="Spatial\WktSanitizerTests.cs" />
     <Compile Include="Storage\Bugs\GetReduceKeysAndTypesNotPagingProperly.cs" />
     <Compile Include="Storage\Lists.cs" />
-    <Compile Include="Stress\DocWithNoStringIdentifier.cs" />
     <Compile Include="Stress\InlineValueAttribute.cs" />
     <Compile Include="Suggestions\SuggestionsUsingAnIndex.cs" />
     <Compile Include="Synchronization\ConcurrentJsonDocumentSortedListTests.cs" />
