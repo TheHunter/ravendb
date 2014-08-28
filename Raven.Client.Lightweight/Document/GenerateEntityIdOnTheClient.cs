@@ -34,10 +34,12 @@ namespace Raven.Client.Document
 				var value = identityProperty.GetValue(entity, new object[0]);
 				id = value as string;
 				if (id == null && value != null) // need conversion
-				{
-					id = documentStore.Conventions.FindFullDocumentKeyFromNonStringIdentifier(value, entity.GetType(), true);
-					return true;
-				}
+                //{
+                //    id = documentStore.Conventions.FindFullDocumentKeyFromNonStringIdentifier(value, entity.GetType(), true);
+                //    return true;
+                //}
+                    id = documentStore.Conventions.FindFullDocumentKeyFromNonStringIdentifier(value, entity.GetType(), true);
+
 				return id != null;
 			}
 			id = null;

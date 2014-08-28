@@ -108,6 +108,9 @@ namespace Raven.Tests.Bugs.Identifiers
         /// <returns></returns>
         public object ConvertTo(string value)
         {
+            if (string.IsNullOrWhiteSpace(value))
+                return null;
+
             try
             {
                 return Convert.ChangeType(value, typeof(TValue));
